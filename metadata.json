@@ -1,0 +1,6 @@
+{
+  "name": "TAMANUS — Fine Dates & Curated Natural Foods",
+  "description": "Reimagined digital experience for TAMANUS, a luxury food house dedicated to carefully sourced date varieties and natural food collections from Madinah and Arabia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

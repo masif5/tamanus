@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'Amiri', serif;
+
+  --color-tamanus-forest: #0D281E;
+  --color-tamanus-green: #154230;
+  --color-tamanus-emerald: #1D5B42;
+  --color-tamanus-sand: #EFE8DA;
+  --color-tamanus-gold: #C6A052;
+  --color-tamanus-gold-muted: #D8BA7E;
+  --color-tamanus-cream: #FAF8F5;
+  --color-tamanus-stone: #E8E3D7;
+  --color-tamanus-ink: #141C18;
+  --color-tamanus-muted: #596A61;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-tamanus-cream);
+  color: var(--color-tamanus-ink);
+  overflow-x: hidden;
+}
+
+/* Custom editorial selection */
+::selection {
+  background-color: #154230;
+  color: #F4EFE6;
+}
+
+/* Subtle luxury grain effect overlay helper */
+.grain-overlay {
+  background-image: radial-gradient(rgba(21, 66, 48, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Editorial line clamp & title balance */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4BAA9;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #154230;
+}
